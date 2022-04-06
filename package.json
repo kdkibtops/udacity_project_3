@@ -1,0 +1,25 @@
+{
+    "name": "hosting-full-stack",
+    "version": "1.0.0",
+    "scripts": {
+        "api:build": "cd udagram-api && npm run build && cd ..",
+        "api:install": "cd udagram-api && npm ci && cd ..",
+        "api:test": "cd udagram-api && npm run test && cd ..",
+        "fe:build": "cd udagram-frontend && npm run build && cd ..",
+        "fe:install": "cd udagram-frontend && npm ci && cd ..",
+        "fe:test": "cd udagram-frontend && npm run test && cd ..",
+        "postinstall": "npm run api:install && npm run fe:install"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kdkibtops/udacity_project_3.git"
+    },
+    "description": "This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.",
+    "bugs": {
+        "url": "https://github.com/kdkibtops/udacity_project_3/issues"
+    },
+    "homepage": "https://github.com/kdkibtops/udacity_project_3#readme",
+    "author": "Mustafa Heidar",
+    "license": "ISC"
+}
