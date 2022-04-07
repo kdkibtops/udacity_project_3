@@ -4,7 +4,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.4.28
 jobs:
   Front_end_deployment:
-    working directory: ~/app/udagram-frontend
+    working_directory: ~/app/udagram-frontend
     executor: node/default
     steps:
       - checkout:
