@@ -1,6 +1,8 @@
-### App dependencise: 
+# App dependencies: 
 
-- Package manager: npm or yarn
+- Package manager: 
+    - npm 8.3.1
+    - yarn 1.22.17
 - aws cli
-- node.js 16
+- node.js v16.14.0
 - postgreSQL database
