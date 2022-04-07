@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@4.2.0
   aws-cli: circleci/aws-cli@2.4.28
 jobs:
-  Front-end-deployment:
+  Front_end_deployment:
     working directory: ~/app/udagram-frontend
     executor: node/default
     steps:
@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Deploy Frontend
           command: aws s3 cp --recursive --acl public-read ./www s3://udagram-heidar/
-  back-end-deployment:
+  back_end_deployment:
     working_directory: ~/app/udagram-api
     executor: node/default
     steps:
@@ -42,5 +42,5 @@ jobs:
 workflows:
   build-deploy:
     jobs:
-      - Front-end-deployment
-      - back-end-deployment
+      - Front_end_deployment
+      - back_end_deployment
