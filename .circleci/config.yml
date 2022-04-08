@@ -36,9 +36,7 @@ jobs:
           name: Deploy Server
           command: |-
             aws s3 cp ./www/Archive.zip s3://elasticbeanstalk-us-east-1-514849120252/
-            aws elasticbeanstalk create-application-version --udagram-heidar $udagramheidar --version-label <<pipeline.git.revision>> --source-bundle S3Bucket="$EB_BUCKET",S3Key="Archive.zip"
-            aws elasticbeanstalk update-environment --application-name $udagramheidar --environment-name $Udagramheidar-env --version-label <<pipeline.git.revision>>
-
+            aws elasticbeanstalk update-environment --environment-name Udagramheidar-env
 workflows:
   build-deploy:
     jobs:
